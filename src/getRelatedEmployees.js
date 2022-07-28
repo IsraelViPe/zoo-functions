@@ -13,7 +13,7 @@ function getRelatedEmployees(managerId) {
   return data.employees.reduce((arr, { managers }, index, array) => {
     // console.log(index, array[index].firstName);
     if (managers.includes(managerId)) {
-      arr.push(`${array[index].firstName} ${array[index].lastName} `);
+      arr.push(`${array[index].firstName} ${array[index].lastName}`);
     }
     return arr;
   }, []);
