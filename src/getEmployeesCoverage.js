@@ -68,3 +68,5 @@ function getEmployeesCoverage(param) {
 }
 
 module.exports = getEmployeesCoverage;
+
+console.log(typeof getEmployeesCoverage)
